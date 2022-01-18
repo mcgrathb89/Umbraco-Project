@@ -1,0 +1,194 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "Master.cshtml";
+}
+
+<section class="hero-image">
+    <h1>@(!string.IsNullOrWhiteSpace(@Model.Title) ? Model.Title : Model.Name)</h1>
+    <p>@Model.WelcomeText</p>
+    <a href=@Model.HeroButtonLink>
+        <div class="button">@Model.ButtonText</div>
+    </a>
+</section>
+
+<main>
+    <section>
+        <div id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="intro-section text-center">
+                            <h2>@Model.IntroSectionTitle</h2>
+                            <p>@Model.IntroSectionText</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="content-box">
+                            <div class="infobox">
+                                <img src="https://static.live.templately.com/woocommerce/2021/11/icon-1.png"
+                                    alt="Icon One">
+                                <h3>@Model.InfoBoxOneText</h3>
+                                <p>@Model.InfoboxOneDescription</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="content-box">
+                            <div class="infobox">
+                                <img src="https://static.live.templately.com/woocommerce/2021/11/icon-2.png"
+                                    alt="Icon Two">
+                                <h3>@Model.InfoBoxTwoText</h3>
+                                <p>@Model.InfoboxTwoDescription</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="content-box">
+                            <div class="infobox">
+                                <img src="https://static.live.templately.com/woocommerce/2021/11/icon-3.png"
+                                    alt="Icon Three">
+                                <h3>@Model.InfoBoxThreeText</h3>
+                                <p>@Model.InfoboxThreeDescription</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container about-us-section" id="about-us">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <h3>About Us</h3>
+                    <h4>@Model.AboutUsTitle</h4>
+                    <p>@Model.AboutUsDescription</p>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 "></div>
+                <div class="col-lg-5 col-md-12 col-sm-12 ">
+                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2021/08/30/18/33/worker-6586718_1280.jpg"
+                        alt="About us section image" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container gallery-section" id="gallery">
+            <h3 class="text-center mb-5 mt-5">Gallery</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/building-skyscraper-modern-facade-1914309/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2016/12/17/20/05/building-1914309_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image One</figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/architecture-skyscraper-2256489/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Two</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/house-garage-driveway-architecture-1867187/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Three</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/cathedral-building-architecture-1066314/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2015/11/27/20/28/cathedral-1066314_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Four</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/monastery-cloister-abbey-corridor-3130879/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2018/02/04/21/13/monastery-3130879_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Five</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/czech-republic-city-architecture-6471576/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2021/07/16/18/28/czech-republic-6471576_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Six</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/castle-monument-park-building-6566978/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2021/08/23/07/38/castle-6566978_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Seven</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/house-home-facade-exterior-540796/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Eight</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <figure>
+                        <a href="https://pixabay.com/photos/flag-building-facade-structure-6913477/" target="_blank"
+                            rel="noreferrer">
+                            <img class="img-fluid"
+                                src="https://cdn.pixabay.com/photo/2022/01/03/19/39/flag-6913477_1280.jpg"
+                                alt="Gallery image" />
+                        </a>
+                        <figcaption>Gallery Image Nine</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

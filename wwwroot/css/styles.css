@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+
+body{
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;    
+}
+
+.text-small {
+    font-size: 0.9rem;
+}
+
+a {
+    color: #6c757d !important;
+    text-decoration: none !important;
+    transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: white !important;
+}
+
+.margin-left-right-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2016/11/24/20/30/architecture-1857175_1280.jpg);
+    height: 70vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media (max-width: 576px) { 
+    .hero-image h1{
+        font-size: 2rem !important;
+    }
+    
+    .hero-image p{
+        font-size: 1rem !important;
+    }
+    
+    .hero-image h1, .hero-image p{
+        width: 100% !important;
+    }
+    
+    .about-us-section h3, .about-us-section h4{
+        text-align: center;
+    }
+}
+
+.hero-image h1{
+    font-size: 3.625rem;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+.hero-image p{
+    font-size: 1.125rem;
+    line-height: 1.8em;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.hero-image h1, .hero-image p{
+    color: white;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero-image .button{
+    font-family: Roboto;
+    font-size: 1.125rem;
+    line-height: 1.2em;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 13px 20px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(255,148,99,1);
+}
+
+.hero-image .button:hover{
+    transition: all 0.6s;
+    transform: scale(1.2);
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.2rem !important;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+.intro-section, .about-us-section, .gallery-section{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.intro-section h2{
+    color: #ff3e3e;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.intro-section p{
+    text-align: center;
+    color: #10111c;
+    font-size: 3rem;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+.content-box{
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-shadow: rgba(0,0,0,0.04) 0px 5px 10px 2px;
+    border-radius: 6px;
+    background-color: white;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.infobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infobox img{
+    margin-top: 4rem;
+}
+
+.infobox h3{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(29,29,29,1);
+}
+
+.infobox p{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.7em;
+    font-weight: 400;
+    padding-bottom: 40px;
+    color: rgba(90,91,106,1);
+}
+
+.about-us-section h3{
+    color: #ff3e3e;
+    font-size: 1rem;
+    line-height: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about-us-section h4{
+    color: #10111c;
+    font-size: 2rem;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+.about-us-section p{
+    color: #5a5b6a;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8em;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-us-section img{
+    border-radius: 10px;
+}
+
+.gallery-section h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.gallery-section img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0,0,0,0.15) 0px 5px 10px 2px;
+}
+
+.gallery-section img:hover{
+    transition: all 0.6s;
+    filter: brightness(80%);
+    transform: scale(.9);
+}
+
+.gallery-section figcaption{
+    text-align: center;
+}
